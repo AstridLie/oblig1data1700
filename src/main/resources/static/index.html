@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Movie Ticket</title>
+</head>
+<body>
+<h1>ordering movie tickets</h1>
+
+<label for="film">Movie:</label>
+<select id="film">
+    <option value="">Select a movie</option>
+    <option value="Return of the King">Return of the King</option>
+    <option value="Revenge of the Sith">Revenge of the Sith</option>
+    <option value="Empire strikes back">Empire strikes back</option>
+</select>
+
+<br>
+
+<label for="quantity">Number of Tickets:</label>
+<input id="quantity" type="number">
+<br>
+<br>
+<label for="firstName">First Name:</label>
+<input id="firstName" type="text">
+
+<br>
+
+<label for="lastName">Last Name:</label>
+<input id="lastName" type="text">
+
+<br>
+
+<label for="PhoneNr">PhoneNr:</label>
+<input id="PhoneNr" type="tel">
+
+<br>
+
+<label for="email">Email:</label>
+<input id="email" type="email">
+<br>
+<br>
+<button onclick="buyTicket()">Buy Ticket</button>
+<button onclick="removeAllTickets()">Remove All Tickets</button>
+
+<h2>All Tickets</h2>
+<ul id="ticketList"></ul>
+
+<script src="index.js"></script>
+</body>
+</html>
